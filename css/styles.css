@@ -36,6 +36,7 @@ h1,
 h2 {
 
     text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
 
 h1 {
@@ -50,7 +51,7 @@ h1 {
 
 h2 {
 
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
 }
 
@@ -61,7 +62,7 @@ section {
     padding: 32px;
 }
 
-.presentation {
+.intro {
 
     display: block;
     border-bottom: 1px solid black;
@@ -102,4 +103,21 @@ footer {
     background-color: black;
     padding: 5px 15px;
     
+}
+
+.acteurs {
+
+    text-align: center;
+    background-color: white;
+}
+
+.noms {
+
+    background-color: #d4d4d4;
+    text-transform: uppercase;
+    color: darkred;
+    border-radius: 30px;
+    margin: 5px 0px;
+    padding: 5px;
+   
 }
