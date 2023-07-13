@@ -17,108 +17,38 @@ body {
     border: 1px solid black;
     margin: 16px auto;
     max-width: 960px;
+    padding: 16px;
     width: 80%;
 
 }
 
-img {
-
-    display: block;
-    margin: 15px auto;
-    width: 25%;
-}
-
-strong {
-
-    font-weight: bold;
-}
-
-h1,
-h2 {
+header {
 
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+}
+
+img {
+
+    margin-bottom: 16px;
 }
 
 h1 {
 
-    font-weight: bold;
-    font-size: 55px;
-    padding: 15px;
-    margin: 32px 15px;
     border-top: 2px solid darkred;
     border-bottom: 2px solid darkred;
-}
-
-h2 {
-
-    font-size: 28px;
+    font-size: 48px;
     font-weight: 700;
+    margin-bottom: 16px;
+    padding: 16px;
 }
 
-section {
+    /* selecteur : les span compris dans un h1
+    privilégier les class, mais c'est une démonstration*/
+h1 span {
 
-    background-color: #d4d4d4;
-    margin: 0 100px;
-    padding: 32px;
-}
-
-.intro {
-
-    display: block;
-    border-bottom: 1px solid black;
-    padding: 25px 0;
-    margin-bottom: 32px;
-}
-
-.hc {
-
-    display: block;
-    width: 18%;
-}
-
-.diffusion {
-
-    font-size: 13px;
-    font-style: italic;
-    text-align: center;
-}
-
-.Synopsis {
-
-    color: darkred;
-}
-
-footer {
-
-    text-align: center;
-    background-color: #d4d4d4;
-    margin: 16px;
-    padding: 16px 0 100px 0;
-}
-
-.serie {
-
-    font-size: 16px;
-    color: white;
     background-color: black;
-    padding: 5px 15px;
-    
-}
+    color: white;
+    font-size: 16px;
+    padding: 8px;
 
-.acteurs {
-
-    text-align: center;
-    background-color: white;
-}
-
-.noms {
-
-    background-color: #d4d4d4;
-    text-transform: uppercase;
-    color: darkred;
-    border-radius: 30px;
-    margin: 5px 0px;
-    padding: 5px;
-   
 }
