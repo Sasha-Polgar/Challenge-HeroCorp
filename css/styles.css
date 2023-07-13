@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
+
 
 body {
 
@@ -22,8 +25,14 @@ body {
 
 }
 
-header {
+h1, h2, h3 {
+    font-family: 'Oswald' , sans-serif;
+}
 
+.header {
+
+    background: url(../images/hc.png) no-repeat top center;
+    padding-top: 100px;
     text-align: center;
 }
 
@@ -33,6 +42,9 @@ img {
 }
 
 h1 {
+    /*choix estétique hors exo*/
+    background-color: rgba(255,255,255,0.8);
+    /*choix estétique hors exo*/
 
     border-top: 2px solid darkred;
     border-bottom: 2px solid darkred;
@@ -51,4 +63,19 @@ h1 span {
     font-size: 16px;
     padding: 8px;
 
+}
+
+.content {
+
+    background-color: #eee;
+    margin: 0 auto 16px;
+    padding: 16px;
+    width: 80%;
+}
+
+footer {
+
+    background-color: #eee;
+    padding: 16px 16px 48px;
+    text-align: center;
 }
