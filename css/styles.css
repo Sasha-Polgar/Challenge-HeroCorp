@@ -1,115 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
+
+/* Reset perso */
 * {
     box-sizing: border-box;
 }
 
 
-body {
-
-    background-color: #ccc;
-    font-family: sans-serif;
-    margin: 0 auto;
-    max-width: 780px;
-    width: 90%;
+img {
+    display: block;
+    max-width: 100%;
 }
 
-.page {
 
-    background-color: white;
-    border: 1px solid black;
+
+
+/* Styles */
+body {
+    background: #ccc;
+    font-family: sans-serif;
+}
+
+
+.page {
+    background: #fff;
+    border: 1px solid #000;
     margin: 16px auto;
     max-width: 960px;
     padding: 16px;
     width: 80%;
-
 }
+
 
 h1, h2, h3 {
-    font-family: 'Oswald' , sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
-.header {
 
+.header {
+    /* on veut afficher une image en fond */
     background: url(../images/hc.png) no-repeat top center;
+    /*
+    raccourci pour :
+        background-image: url(../images/hc.png);
+        background-position-x: center;
+        background-position-y: top;
+        background-repeat: no-repeat;
+    */
+    height: 300px;
     padding-top: 100px;
-    padding-bottom: 100px ;
     text-align: center;
 }
 
-img {
 
+img {
     margin-bottom: 16px;
 }
 
-h1 {
-    /*choix estétique hors exo*/
-    background-color: rgba(255,255,255,0.8);
-    /*choix estétique hors exo*/
 
-    border-top: 2px solid darkred;
-    border-bottom: 2px solid darkred;
+h1 {
+    /*
+        r = niveau de rouge entre 0 et 255
+        g = niveau de vert entre 0 et 255
+        b = niveau de bleu entre 0 et 255
+        a = transparence (alpha) entre 0 et 1
+    */
+    background-color: rgba(255,255,255,0.8);
+    border-bottom: 2px solid #8b0000;
+    border-top: 2px solid #8b0000;
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 16px;
     padding: 16px;
 }
 
-    /* selecteur : les span compris dans un h1
-    privilégier les class, mais c'est une démonstration*/
-h1 span {
 
-    background-color: black;
-    color: white;
+/* sélecteur : les span compris dans un h1 */
+h1 span {
+    background: #000;
+    color: #fff;
     font-size: 16px;
     padding: 8px;
-
+    display: inline-block;
 }
 
-.content {
 
-    background-color: #eee;
-    margin: 0 auto 16px;
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+
+h3 {
+    color: #8b0000;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+
+p {
+    margin-bottom: 16px;
+}
+
+
+strong {
+    font-weight: 700;
+}
+
+
+/* MAIN */
+.content {
+    background: #eee;
+    margin: 0 auto 16px; /* haut côtés bas */
     padding: 16px;
     width: 80%;
 }
 
-.actors {
-    margin: 0 ;
-}
-.actors li {
 
-    background-color: #eee;
-    border-radius: 1em;
-    height: 1.5em; /* 1em= 1 fois la taille de la police; 1.5 * 16px = 24px */
+/* Présentation */
+.presentation-header {
+    border-bottom: 1px solid #000;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+}
+.presentation-header img {
+    margin: 0 auto 32px;
+    width: 120px;
+}
+
+
+.presentation-aside {
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+
+/* Acteurs */
+.actors {
+    margin: 0 auto 16px; /* haut côtés bas */
+    padding: 16px;
+    width: 80%;
+}
+
+
+.actors li {
+    height: 1.5em; /* 1em = 1 fois la taille de la police ; 1.5 * 16px = 24px */
+    /*
+        quand on a une seule ligne, en mettant la hauteur de ligne égale à
+        la hauteur de l'élément, on centre verticalement le texte
+    */
     line-height: 1.5em;
     margin-bottom: 8px;
     text-align: center;
 }
 
-.actors a {
 
+.actors a {
     background: #eee;
     border-radius: 1em;
-    color: darkred;
-    display: block;
-    text-decoration: none;
+    color: #8b0000;
+    display: block; /* il prend automatiquement 100% de la largeur de son parent */
+    text-decoration: none; /* pas souligné */ 
     text-transform: uppercase;
-    transition: all .3s linear;
+    transition: background-color .3s linear, color 1s linear;
 }
-
 .actors a:hover {
-
-    background: darkred;
+    background: #8b0000;
     color: #eee;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
+    transition: background-color 3s linear, color .1s linear;
 }
 
-footer {
 
-    background-color: #eee;
-    padding: 16px 16px 48px;
+/* Photos */
+figure {
+	border: 1px solid #ccc;
+    margin: 1em auto;
+	padding: 1.5em 1em;
+    text-align: center;
+	width: 30%;
+}
+figure img {
+	height: 120px;
+    margin: 0 auto 16px;
+}
+
+
+/* FOOTER */
+footer {
+    background: #eee;
+    padding: 16px 16px 48px; /* haut côtés bas */
     text-align: center;
 }
